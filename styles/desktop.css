@@ -3,7 +3,7 @@
 			}
 			#banner{ 
 				width:900px;
-				height:260px;
+				height:280px;
 				border:solid 1px #000;
 				margin: 0 auto;
 				text-align: center;
@@ -71,6 +71,8 @@
 
 			#footer h4{
 				margin-top: 80px;
+				color: black;
+				font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 			}
 			#footer img{
 				position: relative;
@@ -84,6 +86,7 @@
 				background-color: rgb(63, 160, 255);
 				color: #fff;
 				padding-top: 0px;
+				margin-top: 10px;
 			}
 
 			#Contact h3{
@@ -96,27 +99,9 @@
 				text-decoration: underline;
 			}
 
-			#Concierge{
-				width: 900px;
-				height: 550px;
-				border:solid 1px #000;
-				margin: 0 auto;
-				background-color: rgb(63, 160, 255);
-				color: #000;
-				padding-top: 0px;
-			}
-			#Concierge h3{
-				margin-top: 0px;
-				text-decoration: underline;
-			}
-			#Concierge h5{
-				position: relative;
-				margin-top:-15px;
-			}
-
 			h3, p, li , h4{
 				font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-				color: black;
+				color: #000;
 			}
 			#sectionWrap{
 				width:900px;
@@ -124,12 +109,14 @@
 			}
 
 			#homeContent{
+				margin-top: 10px;
 				width:650px;
 				height:400px;
 				background-color: rgb(63, 160, 255);
 				float:left;
 			}
 			#sideBar{
+				margin-top: 10px;
 				width:250px;
 				height:400px;
 				background-color: rgb(239, 239, 239);;
@@ -140,5 +127,44 @@
 				clear:both;
 			}
 			
+			#container{
+				width: 900px;
+				margin: 0 auto;
+				border:solid 1px #000;
+			}
+
+			#homeContent { 
+				background-color: #428bca;
+			}
+
+			#Contact{
+				background-color: #428bca;
+			}
+
+			.list-group-item-heading{
+				font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+				font-size:16pt;
+			}
+
+			.list-group-item-text{
+				font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+				font-size:12pt;
+			}
+
+			nav a:link, a:visited {
+				padding: 4px;
+				padding-bottom: 4px;
+			}
+
+			#Reservations{
+				width: 900px;
+				height:400px;
+				border:solid 1px #000;
+				margin: 0 auto;
+				background-color: #428bca;
+				padding-top: 0px;
+				margin-top: 10px;
+			}
+
 
 			
