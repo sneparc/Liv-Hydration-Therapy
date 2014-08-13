@@ -43,20 +43,32 @@
 			    color: #000;
 			}
 
-			nav a:link, a:visited {
+			nav a:link {
 			    display: block;
 			    padding: 4px;
     			padding-right: 10px;
 				color:#000;
    			    text-align: center;
-   			    text-decoration: none;
-
-			   
+   			    text-decoration: none;  
 			}
-			nav a:hover, nav a:active {
+
+			nav a:visited{
+			 background-color: rgb(0, 29, 141); 
+   			 color: #000;
+   			 text-decoration: underline;
+			}
+
+			nav a:hover{
    			 background-color: rgb(0, 29, 141); 
    			 color: #fff;
    			}
+
+   			nav a:active{
+   			 background-color: rgb(0, 29, 141); 
+   			 color: #fff;
+   			}
+
+
 	
 
 			#footer{
@@ -149,6 +161,7 @@
 			.list-group-item-text{
 				font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 				font-size:12pt;
+
 			}
 
 			nav a:link, a:visited {
@@ -166,5 +179,52 @@
 				margin-top: 10px;
 			}
 
+			h3, p, li , h4, .list-group-item-text, .list-group-item-heading, #footer h4 {
+				font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+				color: black
+			}
 
-			
+			.list-group-item.active:hover{
+				background-color: #888;
+			}
+
+			.list-group{
+				width: 430px;
+				position:relative; 
+				left:0px;
+				right:0;
+			}
+
+			#container{
+				width: 430px;
+				position: relative;
+				left:240px;
+			}
+
+			#ConciergeServices{
+				border:solid 1px #000; 
+				width: 470px;
+				height:646px;
+				margin-left: 85px;
+				margin-top: 0px;
+				float: left;
+			}
+
+			.list-group-item-heading, .list-group-item-text{
+				position: relative;
+				left: -225px;
+				padding: 0
+			}
+			.list-group-item-text{
+				font-size: 12pt;
+			}
+
+			p.list-group-item-text{
+				height: 20px;
+				width: 600px;
+			}
+
+			h4.list-group-item-heading{
+				width: 600px;
+			}
+
