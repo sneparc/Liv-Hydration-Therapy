@@ -4,9 +4,21 @@
 		<title>Concierge Services</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-		<link href="styles/desktop.css" type="text/css" rel="stylesheet" />
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<script src="http://js/bootstrap.min.js"></script>
+		<!-- Media query for narrow browser width -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css" />
+
+		<!-- Media query for smartphones -->
+		<link rel="stylesheet" media="only screen and (max-device-width: 568px)" href="styles/mobile.css" />
+
+
+		<!-- Media query for medium browser width -->
+		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css" />
+
+		<!-- Media query for tablets -->
+		<link rel="stylesheet" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px)" href="styles/tablet.css" />
+
+		<!-- Media query for full browser width -->
+		<link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css" />
 		<style>
 			body{
 				background-color: rgb(239, 239, 239);
@@ -16,18 +28,33 @@
 
 			h6{
 				position: relative;
-				left:560px;
+				right:-180px;
 				font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 				font-size: 15pt;
 				margin-top: 5px;
 				margin-bottom: 5px;
+				margin-right: -100px;
+			}
+			#footer h4{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#footer img{
+				position: relative;
+				z-index: -1px;
+				top: -125px;
+			}
+
+			#banner{
+				height:200px;
+				
 			}
 		</style>
 	</head>
 	<body>
-		<div id="banner" style="width: 900px; height:332px;">
+		<div id="banner">
 				<a href="index.html">
-				<img src="images/liv-logo.png" width="852px" height="511px"/>
+				<img src="images/liv-logo.png" width="560px" height="335px;"/>
 				</a>
 		</div>
 		<nav>
@@ -38,55 +65,77 @@
 				<li><a href="Contact.html">Contact</a></li>
 			</ul>
 		</nav>
-		<h6>Choose your treatment (one per patient):</h6>
 		<section id="ConciergeServices">
-		<p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+		<h4>Medications (added to the IV fluids):</h4>
+		<dl>
+			<dt>1. Anti-nausea medication</dt>
+				<dd>  - Zofran (ondansetron) 4mg </dd>
+			<br>
+			<dt>2. Anti-headache/Anti-inflammatory/pain-relief medication</dt>
+				<dd>  - Toradol (ketorolac) 30mg </dd>
+			<br>
+			<dt>3. Anti-reflux medication</dt>
+				<dd> - Pepcid (famotidine) 20mg</dd>
+			<br>
+			<dt>4. Vitamin B Complex</dt>
+				<dd>  - Replete all essential B vitamins including riboflavin, thiamine, niacin, and cobalamin (B12)</dd>
+			
+		</dl>
 		</section>
 		<section id="container">
-			<div class="list-group" style= "margin-bottom: 10px; background-color:rgb(63, 160, 255);">
+			<div class="list-group">
 				<a href="Reservations.html" class="list-group-item active">
-					<h4 class="list-group-item-heading" style="color: black; ">Rehydrate: $175</h4>
-					<p class="list-group-item-text" style="color: black;">-1 liter of IV fluid</p>
+					<!-- THIS IS A BUTTON FEATURE --><!-- <button type="button">Select</button> -->
+					<h4 class="list-group-item-heading" style="color: black; ">The Saturday Morning: $250 </h4>
+					<h6 class="list-group-item-heading" style="color: black; ">Recover and Prepare</h6>
+					<p class="list-group-item-text" style="color: black;">- 1-2 liters of IV fluid</p>
+					<p class="list-group-item-text" style="color: black;">- All 4 medications</p>
 				</a>
 			</div>
-			<div class="list-group" style= "margin-bottom: 10px">
+			<div class="list-group">
 				<a href="Reservations.html" class="list-group-item active">
-					<h4 class="list-group-item-heading" style="color: black;">Recover: $200</h4>
-					<p class="list-group-item-text" style="color: black;">-1 liter of IV fluid</p>
-					<p class="list-group-item-text" style="color: black;">-Anti-inflammatory/Analgesic (ketorolac)</p>
+					<h4 class="list-group-item-heading" style="color: black;">The Sunday Morning: $200</h4>
+					<h6 class="list-group-item-heading" style="color: black; ">Revitalize</h6>
+					<p class="list-group-item-text" style="color: black;">- 1 liter of IV fluid</p>
+					<p class="list-group-item-text" style="color: black;">- 2/4 medications </p>
 				</a>
 			</div>
-			<div class="list-group" style= "margin-bottom: 10px;">
+			<div class="list-group">
 				<a href="Reservations.html" class="list-group-item active">
-					<h4 class="list-group-item-heading" style="color: black;">Revival: $225</h4>
-					<p class="list-group-item-text" style="color: black;">-1 liter of IV fluid</p>
-					<p class="list-group-item-text" style="color: black;">-Anti-inflammatory/Analgesic (ketorolac)</p>
-					<p class="list-group-item-text" style="color: black;">-Anti-nausea (ondansetron)</p>
+					<h4 class="list-group-item-heading" style="color: black;">The Athlete: $175</h4>
+					<h6 class="list-group-item-heading" style="color: black; ">Enhancement</h6>
+					<p class="list-group-item-text" style="color: black;">- 1 liter of IV fluid</p>
+					<p class="list-group-item-text" style="color: black;">- Anti-inflammatory</p>
 				</a>
 			</div>
-			<div class="list-group" style= "margin-bottom: 10px;">
+			<div class="list-group">
 				<a href="Reservations.html" class="list-group-item active">
-					<h4 class="list-group-item-heading" style="color: black;">Recharge: $250</h4>
-					<p class="list-group-item-text" style="color: black;">-2 liters of IV fluid</p>
-					<p class="list-group-item-text" style="color: black;">-Anti-inflammatory/Analgesic (ketorolac)</p>
-					<p class="list-group-item-text" style="color: black;">-Anti-nausea (ondansetron)</p>
-					<p class="list-group-item-text"style="color: black;">-Antacid (famotidine)</p>
+					<h4 class="list-group-item-heading" style="color: black;">Rocket Fuel: $100</h4>
+					<p class="list-group-item-text" style="color: black; width:800px">- Vitamin B12 1000mcg subcutaneous injection</p>
+					<p class="list-group-item-text" style="color: black;">- Boost energy, metabolism, weight loss, and immune system</p>
+					<p class="list-group-item-text" style="color: black;">* Add to any package for $50</p>
 				</a>
 			</div>
-			<div class="list-group" style= "margin-bottom: 10px;">
+			<div class="list-group" style= >
 				<a href="Reservations.html" class="list-group-item active">
-					<h4 class="list-group-item-heading" style="color: black;">Energy Boost: $125</h4>
-					<p class="list-group-item-text" style="color: black;">-One of the following injections:</p>
-					<p class="list-group-item-text" style="color: black; position:relative; left:-224px;">-Vitamin B complex</p>
-					<p class="list-group-item-text"style="color: black; position:relative; left:0 px;">-Vitamin B12 1000mcg</p>
+					<h4 class="list-group-item-heading" style="color: black;">The Weekend Package (for couples): $800</h4>
+					<p class="list-group-item-text" style="color: black;">- 2 Saturday Morning packages</p>
+					<p class="list-group-item-text" style="color: black; position:relative; left:0px;">- 2 Sunday Morning packages</p>
+					<p class="list-group-item-text"style="color: black; position:relative; left:0 px;">- 2 Rocket Fuels</p>
 				</a>
 			</div>
-			<div class="list-group" style= " margin-bottom: 10px;">
+			<div class="list-group" >
 				<a href="Reservations.html" class="list-group-item active">
-					<h4 class="list-group-item-heading" style="color: black; position:relative; left:-224px;">Group Discounts and Packages available!</h4>
+					<h4 class="list-group-item-heading" style="color: black; position:relative; left:0px;">Memberships Also Available!</h4>
+				</a>
+			</div>
+			<div class="list-group" ">
+				<a href="Reservations.html" class="list-group-item active">
+					<h4 class="list-group-item-heading" style="color: black; position:relative; left:0px;">General Medical/Surgical Consultants Available</h4>
 				</a>
 			</div>
 		</section>
+		
 		<div id="footer">
 			<section><h4> L.I.V. Medical Hydration Therapy PLLC</h4></section>
 			<img src="images/liv-logo.png" width="200px" height="119.95px"/>

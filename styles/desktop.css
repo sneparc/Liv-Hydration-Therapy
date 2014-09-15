@@ -4,7 +4,6 @@
 			#banner{ 
 				width:900px;
 				height:280px;
-				border:solid 1px #000;
 				margin: 0 auto;
 				text-align: center;
 				vertical-align: top;
@@ -22,9 +21,9 @@
 				position: relative;
 				z-index: 1;
 				margin:0 auto;
-				border:solid 1px #000;
 				background-color: #888;
-				width: 900px;
+				min-width: 480px;
+				max-width: 1260px;
 				height:25px;
 
 			}
@@ -74,7 +73,7 @@
 			#footer{
 				width:900px;
 				height:100px;
-				border:solid 1px #000;
+				border:solid 1px #fff;
 				text-align: center;
 				margin: 0 auto;
 				color: #fff;
@@ -115,13 +114,10 @@
 				font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 				color: #000;
 			}
-			#sectionWrap{
-				width:900px;
-				margin:0 auto;
-			}
+		
 
 			#homeContent{
-				margin-top: 10px;
+				margin-top: -10px;
 				width:650px;
 				height:400px;
 				background-color: rgb(63, 160, 255);
@@ -142,7 +138,6 @@
 			#container{
 				width: 900px;
 				margin: 0 auto;
-				border:solid 1px #000;
 			}
 
 			#homeContent { 
@@ -184,47 +179,201 @@
 				color: black
 			}
 
-			.list-group-item.active:hover{
-				background-color: #888;
-			}
+			
 
 			.list-group{
-				width: 430px;
+				width: 100%;
 				position:relative; 
 				left:0px;
-				right:0;
+				right:0px;
 			}
 
 			#container{
-				width: 430px;
+				width: 40%;
 				position: relative;
-				left:240px;
+				right:200px;
 			}
 
 			#ConciergeServices{
-				border:solid 1px #000; 
-				width: 470px;
-				height:646px;
-				margin-left: 85px;
+				width: 30%;
 				margin-top: 0px;
-				float: left;
+				float: right;
+				margin-right: 175px;
+
 			}
 
 			.list-group-item-heading, .list-group-item-text{
 				position: relative;
-				left: -225px;
-				padding: 0
+				left: 0px;
+				padding: 0;
 			}
 			.list-group-item-text{
 				font-size: 12pt;
 			}
 
 			p.list-group-item-text{
-				height: 20px;
-				width: 600px;
-			}
+					width: 600px;
+				}
 
 			h4.list-group-item-heading{
-				width: 600px;
+				width: 670px;
 			}
+
+			#footer h4{
+				font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+			}
+
+			#Contact{
+				border:none;
+				background-color: rgb(239, 239, 239);
+			}
+
+			#footer{
+					background-color:rgb(239, 239, 239);
+					border: none;
+			}
+
+			#Reservations{
+				background-color:rgb(239, 239, 239);
+				border:none;
+			}
+			#homeContent{
+				background-color:rgb(239, 239, 239);
+			}
+
+			h6{
+				font-style: italic;
+			}
+
+			dl, dt, dd{
+				font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+			}
+
+			#ConciergeServices{
+				border: solid 1pt #000;
+				margin-top: 10px;
+				margin-right: 100px;
+			}
+
+			.list-group-item.active{
+				margin-top: 10px;
+			}
+			.list-group{
+				margin-left: 5px;
+			}
+			.list-group-item.active{
+				background-color: rgb(239, 239, 239);
+				border: solid 1pt #000;
+			}
+
+			.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+				background-color: rgb(239, 239, 239);
+			}
+
+			/*button{
+				background-color: rgb(0, 29, 141);
+				position: relative;
+				left:300px;
+				top: 25px;
+			}*/
+
+			.list-group{
+				margin-top: 10px;
+				margin-left: 5px;
+				width: 460px;
+
+			}
+
+		#banner img{
+				margin-top: -100px;
+				z-index: 1;
+			}
+			
+		nav{
+			max-width: 960px;
+			min-width: 480px;
+		}
+
+		#homeContent{
+			max-width: 960px;
+			min-width:480px;
+			height: 200px;
+		}
+
+		#Reservations{
+			height:100px;
+		}
+
+		#container{
+			right: 235px;
+
+		}
+		.list-group-item-heading{
+			font-size: 20px;
+		}
+			#banner img{
+			position: relative;
+			top: 60px;
+			left:0;
+			margin-left: -550px;
+		
+		}
+		#banner{
+			background-size: 80% 80%;
+			background-position: -175px;
+			margin-right: 0px;
+			margin-top: 0px;
+			height: 200px;
+		}
+			
+		#banner h4 {
+			margin-right:-150px;
+			margin-top: -150px;
+		}
+		#banner p{
+			margin-right: -150px;
+		}
+
+		#banner{
+			min-width: 961px;
+			max-width: 1260px;
+			
+		}
+
+		nav a:link, a:visited{
+			padding:4px;
+			padding-bottom: 4px;
+
+		}
+
+		nav{
+			max-width: 1260px;
+			min-width: 961px;
+
+		}
+
+		#homeContent{
+			min-width: 961px;
+			/*max-width: 1260px;*/
+
+		}
+
+		#homeContent h3{
+			min-width: 961px;
+			max-width: 1260px;
+			margin-right: -100px;
+		}
+
+		#footer{
+			margin-top: 400px;
+		}
+
+		#banner{
+			margin: 0px;
+			margin-top: 0px;
+		}
+
+		body{
+			margin-top: -25px;
+		}
 

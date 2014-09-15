@@ -2,13 +2,26 @@
 <html>
 	<head>
 		<title>Reservations</title>
-		<link href="styles/desktop.css" type="text/css" rel="stylesheet" />
-		
+		<!-- Media query for narrow browser width -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css" />
+
+		<!-- Media query for smartphones -->
+		<link rel="stylesheet" media="only screen and (max-device-width: 568px)" href="styles/mobile.css" />
+
+
+		<!-- Media query for medium browser width -->
+		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css" />
+
+		<!-- Media query for tablets -->
+		<link rel="stylesheet" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px)" href="styles/tablet.css" />
+
+		<!-- Media query for full browser width -->
+		<link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css" />
 	</head>
 	<body>
 		<div id="banner">
 				<a href="index.html">
-				<img src="images/liv-logo.png" width="852px" height="511px"/>
+				<img src="images/liv-logo.png" width="560px" height="335px"/>
 				</a>
 		</div>
 		<nav>
@@ -20,7 +33,8 @@
 			</ul>
 		</nav>
 		<div id="Reservations">
-			<p>Click to email us: <a href="mailto:LIVhydration@gmail.com?Subject=Information" target="_top">Send Email</a>
+			<p>Currently scheduling appointments 7 days a week.</p>
+			<p>Please email us at liv@livhydration.com to schedule an appointment.
 				</p>
 		</div>
 		<div id="footer">

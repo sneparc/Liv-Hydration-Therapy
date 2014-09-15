@@ -1,0 +1,2 @@
+[01-Sep-2014 02:14:35 UTC] PHP Warning:  require(/home/rorysnepar/public_html/wp-includes/load.php): failed to open stream: No such file or directory in /home/rorysnepar/public_html/wp-settings.php on line 21
+[01-Sep-2014 02:14:35 UTC] PHP Fatal error:  require(): Failed opening required '/home/rorysnepar/public_html/wp-includes/load.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rorysnepar/public_html/wp-settings.php on line 21
